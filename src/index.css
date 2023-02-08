@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: rgb(43, 40, 59);
+}
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.toggle-container {
+  width: 200px;
+  aspect-ratio: 2 / 1;
+  background-color: antiquewhite;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+}
+.toggle-circle {
+  height: 100%;
+  aspect-ratio: 1;
+  background-color: rgb(219, 165, 29);
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  transition: transform 200ms ease, left 200ms ease, background-color  200ms ease;
+}
+.right {
+  left: 100%;
+  transform: translateX(-100%);
+  background-color: rgb(9, 25, 101);
+}
+
